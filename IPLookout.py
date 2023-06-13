@@ -12,7 +12,8 @@ print(f"""{Fore.RED}{Style.DIM}
 |_||_|       |___|`___'`___'|_\_\`___'`___' |_| 
 """)
 
-ip = input(f"{Fore.RED}{Style.DIM}IP-Adress: ")
+ip = input(
+    f"{Fore.WHITE}[ {Fore.YELLOW}> {Fore.WHITE}] {Fore.RESET}IP-Adress: ")
 link = f"http://ip-api.com/json/{ip}?fields=17559551"
 
 response = requests.get(link)
